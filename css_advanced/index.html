@@ -1,166 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ki Daryl Studio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous"></script>
+  <title>SmileSchool</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <!-- LINK ELEMENT WITH AN IMAGE -->
-        <a href="index.html">
-            <img src="https://fakeimg.pl/200x60?text=Ki+Daryl+Studio" alt="Ki Daryl Studio Logo">
-        </a>
+  <header class="header">
+    <nav class="header__nav">
+      <div class="nav__logo">
+        <img class="logo__img" src="images/logo.png" alt="logo">
+      </div>
 
-        <!-- BULLETED BLOCK OF 3 LINK ELEMENTS -->
-        <nav>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
+      <ul class="nav__links">
+        <li class="nav__link-item"><a class="nav__link" href="#">PRICING</a></li>
+        <li class="nav__link-item"><a class="nav__link" href="#">COURSE</a></li>
+        <li class="nav__link-item"><a class="nav__link" href="#">LOGIN</a></li>
+      </ul>
+    </nav>
 
-    <main>
-        <!-- BANNER SECTION -->
-        <section>
-            <!-- FIRST BLOCK -->
-            <div>
-                <h1>Welcome to Ki Daryl Studio</h1>
-                <p>We create stunning visuals and branding that stand out.</p>
-                <button>Learn More</button>
-            </div>
+  </header>
+  <main class="main">
 
-            <!-- SECOND BLOCK -->
-            <div>
-                <h2>Our Top Services</h2>
-                <div>
-                    <!-- BLOCK CONTAINING 4 BLOCKS -->
-                    <div>
-                        <img src="https://fakeimg.pl/150x100?text=Design+1" alt="Design Service 1">
-                        <h3>Brand Identity</h3>
-                        <p>Unique and memorable brand designs.</p>
-                    </div>
-                    <div>
-                        <img src="https://fakeimg.pl/150x100?text=Design+2" alt="Design Service 2">
-                        <h3>Graphic Design</h3>
-                        <p>Creative visuals for all platforms.</p>
-                    </div>
-                    <div>
-                        <img src="https://fakeimg.pl/150x100?text=Design+3" alt="Design Service 3">
-                        <h3>Web Design</h3>
-                        <p>Modern and responsive websites.</p>
-                    </div>
-                    <div>
-                        <img src="https://fakeimg.pl/150x100?text=Design+4" alt="Design Service 4">
-                        <h3>Illustrations</h3>
-                        <p>Custom illustrations and artwork.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- QUOTE SECTION -->
-        <section>
-            <div>
-                <!-- IMAGE BLOCK -->
-                <img src="https://fakeimg.pl/150x150?text=Author" alt="Author Image">
-
-                <!-- QUOTE BLOCK -->
-                <div>
-                    <blockquote>
-                        "Design is intelligence made visible. At Ki Daryl Studio, we turn your ideas into reality."
-                    </blockquote>
-                    <h3>Ezekiel Kielson Sackey</h3>
-                    <p>Founder & Creative Director</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- MEMBERSHIP SECTION -->
-        <section>
-            <h2>Join Our Creative Membership</h2>
-            <div>
-                <!-- 4 BLOCK ITEMS -->
-                <div>
-                    <img src="https://fakeimg.pl/100x100?text=Tip+1" alt="Tip 1">
-                    <h3>Exclusive Resources</h3>
-                    <p>Access premium design templates and mockups.</p>
-                </div>
-                <div>
-                    <img src="https://fakeimg.pl/100x100?text=Tip+2" alt="Tip 2">
-                    <h3>Expert Tips</h3>
-                    <p>Get professional design advice from our team.</p>
-                </div>
-                <div>
-                    <img src="https://fakeimg.pl/100x100?text=Tip+3" alt="Tip 3">
-                    <h3>Early Access</h3>
-                    <p>Be the first to see our new collections and tools.</p>
-                </div>
-                <div>
-                    <img src="https://fakeimg.pl/100x100?text=Tip+4" alt="Tip 4">
-                    <h3>Community Support</h3>
-                    <p>Join a network of passionate creatives.</p>
-                </div>
-            </div>
-            <button>REGISTER FOR FREE</button>
-        </section>
-
-        <!-- FAQ SECTION -->
-        <section>
-            <h2>Frequently Asked Questions</h2>
-            <div>
-                <!-- ROW BLOCK 1 -->
-                <div>
-                    <!-- ITEM BLOCK 1 -->
-                    <div>
-                        <h3>What services do you offer?</h3>
-                        <p>We offer branding, graphic design, web design, and illustration services tailored for businesses and individuals.</p>
-                    </div>
-                    <!-- ITEM BLOCK 2 -->
-                    <div>
-                        <h3>How do I join the membership?</h3>
-                        <p>You can join by clicking on the “REGISTER FOR FREE” button in our membership section and filling the simple form.</p>
-                    </div>
-                </div>
-
-                <!-- ROW BLOCK 2 -->
-                <div>
-                    <!-- ITEM BLOCK 3 -->
-                    <div>
-                        <h3>Can I request a custom design?</h3>
-                        <p>Yes! We create custom designs based on your brand's unique needs and preferences.</p>
-                    </div>
-                    <!-- ITEM BLOCK 4 -->
-                    <div>
-                        <h3>How long does a project take?</h3>
-                        <p>Project duration depends on complexity, but most designs are delivered within 1-2 weeks.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-   <!-- FOOTER -->
-<footer>
-    <div>
-        <!-- ROW BLOCK -->
-        <div>
-            <!-- BRAND LOGO -->
-            <img src="https://fakeimg.pl/200x60?text=Ki+Daryl+Studio" alt="Ki Daryl Studio Logo">
-
-            <!-- SOCIAL LINKS BLOCK -->
-            <div>
-                <a href="#"><img src="https://fakeimg.pl/30x30?text=F" alt="Facebook"></a>
-                <a href="#"><img src="https://fakeimg.pl/30x30?text=X" alt="X (Twitter)"></a>
-                <a href="#"><img src="https://fakeimg.pl/30x30?text=I" alt="Instagram"></a>
-                <a href="#"><img src="https://fakeimg.pl/30x30?text=L" alt="LinkedIn"></a>
-                <a href="#"><img src="https://fakeimg.pl/30x30?text=G" alt="GitHub"></a>
-            </div>
+    <section class="main__sect1">
+      <div class="sect1">
+        <div class="sect1__heading-block">
+          <h1 class="sect1__heading">Get schooled</h1>
         </div>
 
-        <!-- COPYRIGHT TEXT -->
-        <p>© 2025 Ki Daryl Studio. All Rights Reserved.</p>
-    </div>
-</footer>
+
+        <div class="sect1__span-block">
+          <span class="sect1__span">SMILES</span>
+          <span class="sect1__span">GRIN</span>
+          <span class="sect1__span">LAUGH</span>
+        </div>
+
+        <button class="sect1__btn">REGISTER FOR FREE</button>
+      </div>
+
+      <div class="sect1__pro-block">
+        <div class="sect1__pro-heading-block">
+          <h2 class="sect1__pro-heading"><span class="sect1__pro-heading-span">Learn</span> from the pros</h2>
+        </div>
+
+        <div class="sect1__pro">
+          <div class="sect1__pro-item">
+            <div class="pro-item__img-block">
+              <img class="pro-item__img" src="images/phillip.png" alt="">
+            </div>
+
+            <div class="pro-item__info-block">
+              <h3 class="pro-item__info-heading">Phillip Massey</h3>
+              <p class="pro-item__info-text">« Smile of the year » 2018 - 2019</p>
+            </div>
+
+          </div>
+
+          <div class="sect1__pro-item">
+            <div class="pro-item__img-block">
+              <img class="pro-item__img" src="images/nannie.png" alt="">
+            </div>
+
+            <div class="pro-item__info-block">
+              <h3 class="pro-item__info-heading">Nannie Lawrence</h3>
+              <p class="pro-item__info-text">Best « little smile » 2017</p>
+            </div>
+
+          </div>
+
+          <div class="sect1__pro-item" style="border-radius: 50rem;">
+            <div class="pro-item__img-block">
+              <img class="pro-item__img" src="images/bruce.png" alt="">
+            </div>
+            <div class="pro-item__info-block">
+              <h3 class="pro-item__info-heading">Bruce Walters</h3>
+              <p class="pro-item__info-text">Best « Friend Smile » live performance 2019</p>
+            </div>
+
+
+          </div>
+
+          <div class="sect1__pro-item">
+            <div class="pro-item__img-block">
+              <img class="pro-item__img" src="images//henry.png" alt="">
+            </div>
+
+            <div class="pro-item__info-block">
+              <h3 class="pro-item__info-heading">Henry Hughes</h3>
+              <p class="pro-item__info-text">« 24h smiles » winner 2016 - 2019</p>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="main__sect2">
+      <div class="sect2__quote-img-block">
+        <img class="sect2__quote-img" src="images/person.png" alt="image">
+      </div>
+
+      <div class="sect2__quote-block">
+        <blockquote class="sect2__quote">« Those tutorials are concise and go straight to the point. I can’t think of a
+          better place to learn
+          smiling. And it’s so fun!</blockquote>
+        <h3 class="sect2__quote-heading">Person Name</h3>
+        <P class="sect2__quote-text">weather presenter</P>
+      </div>
+    </section>
+
+    <section class="main__sect3">
+      <div class="sect3__heading-block">
+        <h2 class="sect3__heading">Most <span class="sect3__heading-span">popular</span> tutorials</h2>
+      </div>
+
+      <div class="sect3__video-container">
+        <div class="sect3__video-block">
+          <div class="video__img-block">
+            <img class="video__img" src="images/thumb1.png" alt="">
+            <img class="video__img-play" src="images/play-button.png" alt="Play button">
+          </div>
+
+          <div class="video__info-block">
+
+            <div class="video__info-a">
+              <h3 class="info-a__heading">Diagonal Smile</h3>
+              <p class="info-a__text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+            </div>
+
+            <div class="video__info-b-block">
+              <div class="video__info-b">
+                <img class="info-b__img" src="images/person.png" alt="">
+                <h4 class="info-b__heading">Phillip Massey</h4>
+              </div>
+
+              <div class="info-b__stars-block">
+                <div class="info-b__stars">
+                  <div class="info-b__star"><i class="fa-solid fa-star"></i></div>
+                  <div class="info-b__star"><i class="fa-solid fa-star"></i></div>
+                  <div class="info-b__star"><i class="fa-solid fa-star"></i></div>
+                  <div class="info-b__star"><i class="fa-solid fa-star"></i></div>
+                  <div class="info-b__star"><i class="fa-solid fa-star"></i></div>
+                </div>
+
+                <p class="info-b__text">8 min</p>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="sect3__video-block">
+          <div class="video__img-block">
+            <img class="video__img" src="images/thumb2.png" alt="">
+            <img class="video__img-play" src="images/play-button.png" alt="Play button">
+          </div>
+
+          <div class="video__info-block">
+
+            <div class="video__info-a">
+              <h3 class="info-a__heading">Sad Smile</h3>
+              <p class="info-a__text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+            </div>
+
+            <div class="video__info-b-block">
+              <div class="video__info-b">
+                <img class="info-b__img" src="images/person.png" alt="Person">
+                <h4 class="info-b__heading">Phillip Massey</h4>
+              </div>
+
+              <div class="info-b__stars-block">
+                <div class="info-b__stars">
+                  <div class="info-b__star"><i class="fa-solid fa-star"></i></div>
+                  <div class="info-b__star"><i class="fa-solid fa-star"></i></div>
+                  <div class="info-b__star"><i class="fa-solid fa-star"></i></div>
+                  <div class="info-b__star"><i class="fa-solid fa-star"></i></div>
+                  <div class="info-b__star"><i class="fa-solid fa-star"></i></div>
+                </div>
+
+                <p class="info-b__text">8 min</p>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="sect3__video-block">
+          <div class="video__img-block">
+            <img class="video__img" src="images/thumb3.png" alt="">
+            <img class="video__img-play" src="images/play-button.png" alt="Play button">
+          </div>
+
+          <div class="video__info-block">
+
+            <div class="video__info-a">
+              <h3 class="info-a__heading"> Natural Smile </h3>
+              <p class="info-a__text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+            </div>
+
+            <div class="video__info-b-block">
+              <div class="video__info-b">
+                <img class="info-b__img" src="images/person.png" alt="Person">
+                <h4 class="info-b__heading">Phillip Massey</h4>
+              </div>
+
+              <div class="info-b__stars-block">
+                <div class="info-b__stars">
+                  <div class="info-b__star"><i class="fa-solid fa-star"></i></div>
+                  <div class="info-b__star"><i class="fa-solid fa-star"></i></div>
+                  <div class="info-b__star"><i class="fa-solid fa-star"></i></div>
+                  <div class="info-b__star"><i class="fa-solid fa-star"></i></div>
+                  <div class="info-b__star"><i class="fa-solid fa-star"></i></div>
+                </div>
+
+                <p class="info-b__text">8 min</p>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="sect3__video-block">
+          <div class="video__img-block">
+            <img class="video__img" src="images/thumb4.png" alt="">
+            <img class="video__img-play" src="images/play-button.png" alt="Play button">
+          </div>
+
+          <div class="video__info-block">
+
+            <div class="video__info-a">
+              <h3 class="info-a__heading">Happy Smile</h3>
+              <p class="info-a__text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+            </div>
+
+            <div class="video__info-b-block">
+              <div class="video__info-b">
+                <img class="info-b__img" src="images/person.png" alt="Person">
+                <h4 class="info-b__heading">Phillip Massey</h4>
+              </div>
+
+              <div class="info-b__stars-block">
+                <div class="info-b__stars">
+                  <div class="info-b__star"><i class="fa-solid fa-star"></i></div>
+                  <div class="info-b__star"><i class="fa-solid fa-star"></i></div>
+                  <div class="info-b__star"><i class="fa-solid fa-star"></i></div>
+                  <div class="info-b__star"><i class="fa-solid fa-star"></i></div>
+                  <div class="info-b__star"><i class="fa-solid fa-star"></i></div>
+                </div>
+
+                <p class="info-b__text">8 min</p>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main__sect4">
+      <div class="sect4__membership-heading">
+        <h2 class="membership__heading"><span class="membership__heading-span">Free</span> membership</h2>
+      </div>
+
+      <div class="membership__info-block">
+
+        <div class="membership__info">
+          <div class="membership__img-block">
+            <img class="membership__img" src="images/smile.png" alt="Smile">
+          </div>
+
+          <div class="membership__info-text-block">
+            <h3 class="membership__info-heading">Lorem Ipsum</h3>
+            <p class="membership__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+
+        </div>
+
+        <div class="membership__info">
+          <div class="membership__img-block">
+            <img class="membership__img" src="images/smile.png" alt="Smile">
+          </div>
+
+          <div class="membership__info-text-block">
+            <h3 class="membership__info-heading">Lorem Ipsum</h3>
+            <p class="membership__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+
+        </div>
+
+
+        <div class="membership__info">
+          <div class="membership__img-block">
+            <img class="membership__img" src="images/smile.png" alt="Smile">
+          </div>
+
+          <div class="membership__info-text-block">
+            <h3 class="membership__info-heading">Lorem Ipsum</h3>
+            <p class="membership__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+
+        </div>
+
+
+        <div class="membership__info">
+          <div class="membership__img-block">
+            <img class="membership__img" src="images/smile.png" alt="Smile">
+          </div>
+
+          <div class="membership__info-text-block">
+            <h3 class="membership__info-heading">Lorem Ipsum</h3>
+            <p class="membership__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="membership__btn-block">
+        <button class="membership__btn">REGISTER FOR FREE</button>
+      </div>
+
+    </section>
+
+    <section class="main__sect5-faq">
+      <div class="sect5__faq-heading-block">
+        <h2 class="sect5__faq-heading">F.A.Q</h2>
+      </div>
+
+
+      <div class="sect5__fag-info-block">
+        <div class="sect5__faq-a-block">
+          <div class="sect5__faq-a1">
+            <div class="faq__heading-block">
+              <h3 class="faq__heading">How does this work?</h3>
+            </div>
+            <div class="faq__text-block">
+              <p clas="faq__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum.
+              </p>
+
+            </div>
+          </div>
+
+          <div class="sect5__faq-a2">
+            <div class="faq__heading-block">
+              <h3 class="faq__heading">How does this work?</h3>
+            </div>
+            <div class="faq__text-block">
+              <p clas="faq__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+           <div class="sect5__faq-a-block">
+          <div class="sect5__faq-a1">
+            <div class="faq__heading-block">
+              <h3 class="faq__heading">How does this work?</h3>
+            </div>
+            <div class="faq__text-block">
+              <p clas="faq__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum.
+              </p>
+
+            </div>
+          </div>
+
+          <div class="sect5__faq-a2">
+            <div class="faq__heading-block">
+              <h3 class="faq__heading">How does this work?</h3>
+            </div>
+            <div class="faq__text-block">
+              <p clas="faq__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <section class="footer__info-container">
+    
+   <div class="footer__info-block">
+       <div class="footer__info">
+        <div class="footer__nav-logo-block nav__logo">
+          <img class="footer__nav-log logo__img" src="images/logo.png" alt="logo">
+        </div>
+
+        <div class="social__icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+   </div>
+
+      <div class="footer__info-copyright">
+        <p class="info__copyright-text">©smileschool 2025</p>
+      </div>
+
+    </section>
+  </footer>
+</body>
+
+</html>
