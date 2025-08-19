@@ -1,0 +1,410 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'holberton_school-icon';
+  src: url('fonts/holberton_school-icon.woff2') format('woff2'),
+       url('fonts/holberton_school-icon.woff') format('woff'),
+       url('fonts/holberton_school-icon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'holberton_school-icon', Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header / Hero */
+.hero {
+  background: url("images/headphones_hero_1.jpg") center top no-repeat;
+  background-size: cover; 
+  height: 800px; 
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  width: 1000.39px; 
+  margin: 45px auto 0 auto; /* 45px from top */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  color: #FF6565;
+}
+
+/* Hero Content */
+.hero-content {
+  margin-top: 323px; /* space from nav bar to title */
+  max-width: 637px; /* content width */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-content h1 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 13px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Button */
+.hero-content button {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.hero-content button:hover,
+.hero-content button:active {
+  opacity: 0.9;
+}
+
+/* Content below button */
+.hero-description {
+  margin-top: 67px; 
+  margin-bottom: 108px; 
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* WHAT WE DO */
+.what-we-do {
+  padding: 187px 20px 112px;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+.what-title {
+  max-width: 637px;
+  margin: 0 auto 96px;
+}
+
+.what-title h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.what-title p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.what-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1002px;
+  margin: 0 auto;
+}
+
+.icon-item {
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+.icon-item img {
+  display: block;
+  margin: 0 auto 65px;
+  max-width: 80px;
+}
+
+.icon-item p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .what-we-do {
+    padding: 100px 20px;
+  }
+  .what-icons {
+    gap: 30px;
+  }
+  .icon-item img {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: auto;
+    background-size: contain;
+    padding-bottom: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .hero-content {
+    margin-top: 40px;
+    max-width: 90%;
+  }
+
+  .hero-content h1 {
+    font-size: 20px;
+  }
+
+  .hero-content p,
+  .hero-description {
+    font-size: 12px;
+  }
+
+  .hero-content button {
+    width: 100%;
+  }
+
+  .what-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* OUR RESULTS SECTION */
+.result-box {
+  display: grid;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+/* Pentagon Shape */
+.pentagon {
+  display: grid;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: #FF6565;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pentagon span {
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+  z-index: 1;
+}
+
+/* Caption */
+.result-box p {
+  font-size: 14px;
+  margin-top: 15px;
+  line-height: 1.4;
+  max-width: 160px;
+}
+
+/* Tablet (still row but smaller pentagons) */
+@media (max-width: 768px) {
+  .results-grid {
+    gap: 30px;
+  }
+  .pentagon {
+    width: 120px;
+    height: 120px;
+  }
+  .pentagon span {
+    font-size: 22px;
+  }
+}
+
+/* Mobile (stacked column) */
+@media (max-width: 480px) {
+  .results-grid {
+    flex-direction: column;  /* switch to vertical */
+    align-items: center;
+    gap: 30px;
+  }
+  .pentagon {
+    width: 100px;
+    height: 100px;
+  }
+  .pentagon span {
+    font-size: 20px;
+  }
+}
+
+/* CONTACT US SECTION */
+.contact-us {
+  background: white;
+  padding-top: 148px;
+  padding-bottom: 115px;
+  text-align: center;
+  font-family: 'holberton_school-icon', sans-serif;
+}
+
+.contact-container {
+  max-width: 335px;
+  margin: 0 auto;
+}
+
+.contact-container h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact-container p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.contact-container textarea {
+  resize: none;
+  height: 100px;
+}
+
+.contact-container button {
+  background: #FF6565;
+  color: white;
+  padding: 12px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.contact-container button:hover,
+.contact-container button:active {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .contact-container {
+    width: 90%;
+  }
+}
+
+/* FOOTER SECTION */
+.site-footer {
+  background-color: #071629;
+  height: 249px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 45px 40px 20px;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000.39px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  width: 161px;
+  height: auto;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-socials a img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-copy {
+  font-size: 15px;
+  opacity: 0.3517;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive: mobile center alignment */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .site-footer {
+    height: auto; /* let it adjust naturally */
+    padding: 40px 0;
+  }
+  
+  .footer-copy {
+    margin-top: 20px;
+  }
+}
